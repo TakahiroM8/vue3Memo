@@ -2,6 +2,7 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
+    count: 0,
     memos:[]
   },
   getters: {
@@ -9,6 +10,7 @@ export default createStore({
   mutations: {
     // メモを保存する
     save(state, newMemo) {
+      newMemo.id = ++state.count
       state.memos.unshift(newMemo)
     }
   },

@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/new">New</router-link> |
     <router-link to="/about">About</router-link> |
-    <!-- <router-link to="/Aaa">AaaView</router-link> -->
+    <router-link to="/Aaa">AaaView</router-link>
   </nav>
   <router-view/>
 </template>

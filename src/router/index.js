@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NewView from '../views/NewView.vue'
 // import AboutView from '../views/AboutView.vue'
-// import AaaView from '../views/AaaView.vue'
+import AaaView from '../views/AaaView.vue'
 
 const routes = [
   {
@@ -24,11 +24,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
-  // {
-  //   path: '/Aaa',
-  //   name: 'AaaView',
-  //   component: AaaView
-  // },
+  {
+    path: '/Aaa',
+    name: 'AaaView',
+    component: AaaView
+  },
 ]
 
 const router = createRouter({
