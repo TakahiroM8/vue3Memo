@@ -6,6 +6,12 @@ export default createStore({
     memos:[]
   },
   getters: {
+    getCount: (state) => {
+      return state.memos.length
+    },
+    getAll: (state) => {
+      return state.memos
+    }
   },
   mutations: {
     // メモを保存する
