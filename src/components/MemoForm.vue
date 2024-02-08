@@ -8,13 +8,16 @@
 
 <script>
 export default {
-  name: 'MemoForm',
-  date() {
-    return {
-      title:'',
-      content:''
-    }
-  },
+    name: 'MemoForm',
+    props: [
+        'memo'
+    ],
+    data() {
+        return {
+            title: this.memo.title,
+            content: this.memo.content
+        }
+    },
   methods: {
     save() {
       let memo = {
@@ -25,7 +28,7 @@ export default {
       this.$store.commit('save', memo)
       this.$router.push('/')
     }
-  },
+  }
 }
 </script>
 

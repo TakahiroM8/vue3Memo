@@ -1,5 +1,5 @@
 <template>
-  <MemoForm />
+  <MemoForm memo=""/>
 </template>
 
 
@@ -8,7 +8,7 @@
 import MemoForm from '@/components/MemoForm.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'NewView',
   components: {
     MemoForm
   }

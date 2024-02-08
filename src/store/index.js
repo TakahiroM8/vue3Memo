@@ -11,6 +11,9 @@ export default createStore({
     },
     getAll: (state) => {
       return state.memos
+    },
+    getMemoById: (state) => (id) => {
+      return state.memos.find(memo => memo.id === id)
     }
   },
   mutations: {
